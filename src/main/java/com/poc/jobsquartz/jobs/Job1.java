@@ -21,5 +21,7 @@ public class Job1 implements Job {
                 new Date(), jobExecutionContext.getMergedJobDataMap().getIntValue("Id"),
                 jobExecutionContext.getTrigger().getKey().getName(),
                 jobExecutionContext.getTrigger().getJobKey().getName());
+
+        _log.info("-- Job Finished --");
     }
 }
